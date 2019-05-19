@@ -1,6 +1,26 @@
-# Game of Uss(GOU)
+გააკეთეთ მობილური ტელეფონების მაღაზიის აპლიკაცია (single page application)
 
->We will push at sunday 12:00 ,
-for now just enjoy by her
+აუცილებელია იყოს შემდეგი გვერდები:
 
-![Emma Stone](https://www.hellomagazine.com/imagenes/celebrities/2019021969958/emma-stone-who-is-her-boyfriend/0-342-227/emma-stone-smiling-t.jpg)
+/store/phones - უნდა გამოდიოდეს ტელეფონები სიის სახით (პატარა სურათი + მოკლე დასახელება)
+კონკრეტული ტელეფონის დათვალიერების გვერდი
+
+/store/phones/id
+
+უნდა გამოდიოდეს კონკრეტული ტელეფონის შესახებ ინფორმაცია:
+დიდი სურათი, და მახასიათებლები ცხრილის სახით
+
+
+/admin/phones - ტელეფონების სია დამატების, წაშლის და რედაქტირების ღილაკებით
+
+/admin/phones/id/edit - კონკრეტული ტელეფონის რედაქტირებისთვის
+
+/admin/phones/new - ახალი ტელეფონის დამატების ფორმა
+
+
+ყველა ajax რექუესტის შესრულებისას უნდა გამოჩნდეს spinner-ი
+
+აუცილებელია სერვისების გამოყენება
+
+
+ბექენდის მაგივრად გამოიყენეთ https://github.com/typicode/json-server
