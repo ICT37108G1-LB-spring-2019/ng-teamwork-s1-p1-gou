@@ -1,0 +1,53 @@
+<app-spinner *ngIf="loading"></app-spinner>
+
+<div class="container" *ngIf="!loading">
+  <table class="table table-dark table-bordered text-center">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Image</th>
+        <th>Info</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="phones && phones.length > 0">
+      <tr *ngFor="let phone of phones">
+        <th>
+          <a [routerLink]="['/store/phones', phone.id]">
+            {{ phone.id }}
+          </a>
+        </th>
+        <th>
+          <img
+            [src]="phone.imageUrl"
+            alt="Image"
+            style="width: 50px; height:50px;"
+          />
+        </th>
+        <th>{{ phone.info.slice(0, 50) + "..." }}</th>
+        <th>
+          <div class="btn-group">
+            <a
+              [routerLink]="['/admin/phones/', phone.id, 'edit']"
+              class="btn btn-info"
+              >Edit</a
+            >
+            <form>
+              <button
+                class="btn btn-danger"
+                (click)="deletePhone(phone.id)"
+                type="submit"
+              >
+                Delete
+              </button>
+            </form>
+          </div>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+
+  <a [routerLink]="['/admin/phones/new']" class="btn btn-success mt-2"
+    >Add new Phone</a
+  >
+</div>

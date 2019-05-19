@@ -1,0 +1,13 @@
+<h3 class="mb-4">Edit Phone</h3>
+
+<app-alert
+  *ngIf="isValid"
+  type="success"
+  message="Phone  was updated! Suka Bliad"
+>
+</app-alert>
+<app-phone-form
+  [editPhone]="phone"
+  *ngIf="phone"
+  (phone)="updatePhone($event)"
+></app-phone-form>

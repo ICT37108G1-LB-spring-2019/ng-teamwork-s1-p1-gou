@@ -1,0 +1,7 @@
+<h3 class="mb-4">Add new Phone</h3>
+<app-alert
+  type="success"
+  *ngIf="isValid"
+  message="New phone added succesfuly suka bliad !!!!"
+></app-alert>
+<app-phone-form (phone)="addPhone($event)"></app-phone-form>

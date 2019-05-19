@@ -1,0 +1,46 @@
+{
+  "phones": [
+    {
+      "info": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet illum facere rem accusamus suscipit, placeat pariatur numquam laboriosam voluptates repudiandae, iste nulla ipsum, et eos. Quas nihil non doloremque libero aliquam rerum tempore! Repudiandae culpa facilis, delectus incidunt eveniet corporis, ad nostrum a placeat possimus distinctio. Dicta nisi quisquam ducimus?",
+      "imageUrl": "https://media.wired.com/photos/5b22c5c4b878a15e9ce80d92/master/pass/iphonex-TA.jpg",
+      "features": [
+        "Camera",
+        "Wi-fi",
+        "Bluetooth",
+        "Quick charge",
+        "Etc..."
+      ],
+      "id": 1
+    },
+    {
+      "id": 2,
+      "info": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet illum facere rem accusamus suscipit, placeat pariatur numquam laboriosam voluptates repudiandae, iste nulla ipsum, et eos. Quas nihil non doloremque libero aliquam rerum tempore! Repudiandae culpa facilis, delectus incidunt eveniet corporis, ad nostrum a placeat possimus distinctio. Dicta nisi quisquam ducimus?",
+      "imageUrl": "https://media.wired.com/photos/5b22c5c4b878a15e9ce80d92/master/pass/iphonex-TA.jpg",
+      "features": [
+        "Camera",
+        "Wi-fi",
+        "Bluetooth",
+        "Quick charge",
+        "Etc..."
+      ]
+    },
+    {
+      "info": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet illum facere rem accusamus suscipit, placeat pariatur numquam laboriosam voluptates repudiandae, iste nulla ipsum, et eos. Quas nihil non doloremque libero aliquam rerum tempore! Repudiandae culpa facilis, delectus incidunt eveniet corporis, ad nostrum a placeat possimus distinctio. Dicta nisi quisquam ducimus?",
+      "imageUrl": "https://media.wired.com/photos/5b22c5c4b878a15e9ce80d92/master/pass/iphonex-TA.jpg",
+      "features": [
+        "Wi-fi",
+        "Bluetooth",
+        "Quick charge",
+        "Etc..."
+      ],
+      "id": 3
+    }
+  ],
+  "features": [
+    "Camera",
+    "Wi-fi",
+    "Bluetooth",
+    "Quick charge",
+    "Etc..."
+  ]
+}

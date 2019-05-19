@@ -1,0 +1,20 @@
+{
+  "phones": [
+    {
+      "info": "asdasd",
+      "imageUrl": "https://static.toiimg.com/photo/64171591/Samsung-Galaxy-S10.jpg",
+      "features": [
+        "Camera",
+        "Quick Charge"
+      ],
+      "id": 1
+    }
+  ],
+  "features": [
+    "Camera",
+    "Wi-fi",
+    "Quick Charge",
+    "Bluetooth",
+    "Etc...."
+  ]
+}

@@ -1,0 +1,52 @@
+<app-alert
+  *ngIf="!isValid"
+  type="danger"
+  message="Form not valid , suka bliad !!!!"
+></app-alert>
+
+<form [formGroup]="phoneForm" (ngSubmit)="submitForm(phoneForm)">
+  <div class="form-group">
+    <label for="info">Phone Info</label>
+    <textarea
+      name="info"
+      id="info"
+      rows="3"
+      class="form-control"
+      [formControl]="phoneForm.controls['info']"
+    ></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="imageUrl">Phone Image Url</label>
+    <input
+      type="text"
+      class="form-control"
+      id="imageUrl"
+      placeholder="https://www.photo.com/gtu"
+      [formControl]="phoneForm.controls['imageUrl']"
+    />
+
+    <img
+      *ngIf="phoneForm.controls['imageUrl'].value"
+      [src]="phoneForm.controls['imageUrl'].value"
+      alt="..."
+      class="img-thumbnail m-4"
+      style="width: 250px; height:250px;"
+    />
+  </div>
+  <div class="form-group" *ngIf="features && features.length > 0">
+    <label for="features">Phone Features</label>
+    <select
+      multiple
+      class="form-control"
+      id="features"
+      [formControl]="phoneForm.controls['features']"
+    >
+      <option [value]="feature" *ngFor="let feature of features">
+        {{ feature }}
+      </option>
+    </select>
+  </div>
+
+  <button class="btn btn-success mt-2" type="submit">Submit</button>
+</form>

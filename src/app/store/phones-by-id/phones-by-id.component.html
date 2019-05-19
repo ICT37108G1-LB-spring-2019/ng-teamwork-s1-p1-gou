@@ -1,0 +1,18 @@
+<app-spinner *ngIf="loading"></app-spinner>
+<div class="card" *ngIf="phone">
+  <img [src]="phone.imageUrl" class="card-img-top" alt="..." />
+  <div class="card-body">
+    {{ phone.info }}
+  </div>
+
+  <div class="container" *ngIf="phone.features && phone.features.length > 0">
+    <h4>Features</h4>
+    <table class="table table-striped">
+      <tbody>
+        <tr *ngFor="let feature of phone.features">
+          <td>{{ feature }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
